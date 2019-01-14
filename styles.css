@@ -1,0 +1,106 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+head {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1366px;
+  max-height: 768px;
+  margin: auto;
+  background: url(images/sparklebg.png);
+  color: #6d1a4c;
+  background-color: #FFF0F5;
+}
+
+div {
+  height: 250px;
+  width: 800px;
+  margin: auto;
+  margin-top:40px;
+  margin-bottom:80px;
+  border-style: dotted;
+  border-width: 10px;
+  border-color: 	#FFF0F5;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-size: 300%;
+  display: block;
+  margin: auto;
+  width: 800px;
+  background: ivory;
+  opacity: 0.8;
+}
+
+section {
+  font-family: 'Indie Flower', cursive;
+  opacity: 0.8;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  width: 70%;
+  margin: auto;
+}
+
+nav {
+  background: ivory;
+  text-align: center;
+}
+
+h2 {
+  font-size: 250%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+ol, ul {
+  font-family: 'Thasadith', sans-serif;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+li {
+  font-size: 150%;
+}
+
+a {
+  color: #853aa8;
+}
+
+a:hover {
+  color: #fc2872;
+}
+
+footer {
+  position: fixed;
+  display: block;
+  margin:auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:100%;
+  opacity: 0.5;
+}
+
+footer nav {
+  margin: auto;
+  padding-top: 10px;
+  /* margin-top: 90px; */
+}
+
+footer nav li {
+  display:inline;
+  font-family: 'Indie Flower', cursive;
+  padding: 20px;
+  font-size: 95%;
+  text-align: center;
+  margin: auto;
+}
