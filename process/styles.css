@@ -8,6 +8,8 @@ head {
 }
 
 body {
+  display:block;
+  margin:auto;
   max-width: 1366px;
   max-height: 768px;
   color: #6d1a4c;
