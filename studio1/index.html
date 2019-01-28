@@ -6,36 +6,66 @@
   <title>Studio-1</title>
   <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
   <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
 </head>
 
 <body>
   <header>
     <h1>Adventure Awaits!</h1>
-    <div id="mySketch">
-    </div>
   </header>
 
   <section>
-    <!--Form-->
-    <form>
-      <label for="name">A name: </label><input type="text" name="name" id="name" required>
-      <label for="verb">A verb: </label><input type="text" name="verb" id="verb" required>
-      <label for="adj">An adjective: </label><input type="text" name="adj" id="adj" required>
-      <label for="noun">A noun: </label><input type="text" name="noun" id="noun" required>
+    <form name="madlibs" onsubmit="return false">
+      <fieldset>
+        <label for="name">A name: </label>
+        <input type="text" name="name" id="name" required>
+      </fieldset>
 
-      <input type="submit" value="submit" id="submit">
-      <input type="reset" value="reset" id="reset">
+      <fieldset>
+        <label for="verb">A verb: </label>
+        <input type="text" name="verb" id="verb" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="adj">An adjective: </label>
+        <input type="text" name="adj" id="adj" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="noun">A noun: </label>
+        <input type="text" name="noun" id="noun" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="creature">A creature: </label>
+        <input type="text" name="creature" id="creature" required>
+      </fieldset>
+
+      <fieldset>
+        <input type="reset" value="reset" id="reset" />
+        <input type="submit" value="submit" id="submit" />
+      </fieldset>
     </form>
-
   </section>
 
+  <!-- shows message form after submission with CSS -->
+  <div>
+  <section id="storySection" class="hide">
+
+    <p id="myStory"></p>
+
+  </section>
+  </div>
+
+  <img src = "images/animation.gif" alt = "animation">
 
   <footer>
     <nav>
       <ul>
-        <li><a href="mailto:&#108;&#107;&#106;&#108;&#101;&#101;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Contact Me </a></li>
-        <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></li>
         <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
       </ul>
     </nav>
