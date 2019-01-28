@@ -26,11 +26,13 @@ body{
 section{
   padding:40px;
   display: block;
-  width: 300px;
+  width: 500px;
 }
 form{
   box-sizing: border-box;
   border: none;
+  position: absolute;
+  left:300px;
   background-color: #FAEBD7;
   padding-top:20px;
   line-height: 30px;
@@ -44,7 +46,7 @@ select {
 
 div{
   position: absolute;
-  top:100px;
+  top:150px;
   right:500px;
   padding:20px;
   line-height: 20px;
@@ -82,6 +84,7 @@ input[type="reset"]:hover {
   opacity:1;
   transition:opacity 1s;
 }
+
 
 footer{
   position: fixed;
