@@ -24,15 +24,17 @@ body{
 }
 
 section{
-  padding:40px;
-  display: block;
-  width: 500px;
+  /* background-color: transparent; */
+
+  /* padding:40px; */
+  /* display: block; */
+  /* width: 500px; */
 }
 form{
   box-sizing: border-box;
   border: none;
   position: absolute;
-  left:200px;
+  left:50px;
   background-color: #FAEBD7;
   padding-top:20px;
   line-height: 30px;
@@ -48,7 +50,7 @@ div{
   position: absolute;
   top:150px;
   right:500px;
-  padding:20px;
+  /* padding:20px; */
   line-height: 20px;
 }
 
@@ -59,10 +61,8 @@ img {
 }
 
 p{
-  background-color: #FAEBD7;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  text-shadow: 1px 1px 2px brown, 0 0 25px ivory, 0 0 25px #FAEBD7;
+  width:400px;
 }
 
 input[type=text] {
