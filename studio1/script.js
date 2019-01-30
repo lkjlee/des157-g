@@ -28,7 +28,7 @@ function processForm() {
     "</em> had to <em>" + verb + "</em> out of their hometown to go on this adventure in order to save the world from <em>" +
     creature + "</em>. They head towards their destination but instead find an army of tiny <em>" + creature +
     "</em> ! It was revealed that the mastermind was their mentor, the <em>" + noun + "</em> all along! But ultimately <em>" + name + "</em> remained <em>" + adj + "</em> as they <em>" +
-    verb + "</em> both the " + noun + " and their fears, managing to barely save the world once and for all! With the <em>" + noun + "</em> soundly defeated, <em>" + name +
+    verb + "</em> both the <em>" + noun + "</em> and their fears, managing to barely save the world once and for all! With the <em>" + noun + "</em> soundly defeated, <em>" + name +
     "</em> made their way home with an adventure that few believed, but with a story to remember forever.</p>";
 
   storySection.className = "show";
