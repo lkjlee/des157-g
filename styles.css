@@ -69,6 +69,7 @@ ol, ul {
 
 li {
   font-size: 150%;
+  padding-bottom: 5px;
 }
 
 a {
