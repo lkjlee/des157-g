@@ -6,26 +6,25 @@
   <title>Studio-2</title>
   <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
   <link href="styles.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2"></script>
 </head>
 
 <body>
   <header>
-    <h1></h1>
-    <div id="mySketch">
-    </div>
+    <h1>Bag of Holding</h1>
   </header>
 
   <section>
-    <img src="" alt="">
+    <img src="images/blank.png" alt="bag" id="myBag">
     <!-- Items -->
-    <nav>
+    <nav id="popOut">
       <ul>
-        <li><a href=""><img src="" alt="">Android Phone</a></li>
-        <li><a href=""><img src="" alt="">Grocery Bag</a></li>
-        <li><a href=""><img src="" alt="">Earphones</a></li>
+        <li id="driftPhone"><img src="images/blank.png" alt="phone">Android Phone</li>
+        <li id="driftGrocery"><img src="images/blank.png" alt="grocery">Grocery Bag</li>
+        <li id="driftAirpods"><img src="images/blank.png" alt="airpods">Earphones</li>
       </ul>
     </nav>
+    <div id="closeBag">&otimes;</div>
   </section>
 
 

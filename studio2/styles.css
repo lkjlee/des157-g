@@ -1,5 +1,36 @@
+/* Mobile View */
 * {
   text-decoration: none;
   list-style-type: none;
+}
+
+body {
+  max-width: 1366px;
+  max-height: 768px;
+  margin: auto;
+  color: #6d1a4c;
+  background-color: #FFF0F5;
+}
+
+nav {
+  display: none;
+}
+
+.driftPhone{
+  /* position */
+  /* opacity:1; */
+  /* transition: opacity 1s; */
+}
+img {
+    display:block;
+    margin:auto;
+  }
+
+
+/* Desktop View */
+@media only screen and (min-width: 769px) {
+  img {
+      width: 50%;
+    }
 
 }
