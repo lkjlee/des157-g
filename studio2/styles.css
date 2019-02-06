@@ -1,5 +1,72 @@
+/* Mobile View */
 * {
   text-decoration: none;
   list-style-type: none;
+}
 
+body {
+  max-width: 1366px;
+  max-height: 768px;
+  margin: auto;
+  color: #6d1a4c;
+  background-color: #FFF0F5;
+}
+
+section {
+  /* display: flex; */
+}
+
+nav {
+  display: none;
+}
+
+#myBag {
+  position: absolute;
+  bottom: 0;
+  width: 3in;
+  margin:auto;
+  display: block;
+}
+
+/* position */
+/* opacity:1; */
+/* transition: opacity 1s; */
+
+li img{
+opacity: .25;
+transition: opacity 4s;
+}
+
+#driftPhone, #driftGrocery, #driftAirpods {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transition: all 2s;
+}
+
+.phoneMove {
+  position: absolute;
+  left: 10%;
+  bottom: 500px;
+  transition: all 2s;
+  border: red 13px solid;
+}
+
+#driftGrocery {
+  left: 30%;
+}
+
+#driftAirpods {
+  left: 60%;
+}
+
+/* .driftPhone{
+    position: absolute;
+    bottom:300px;
+  } */
+/* Desktop View */
+@media only screen and (min-width: 769px) {
+  img {
+    width: 50%;
+  }
 }
