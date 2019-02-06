@@ -1,127 +1,117 @@
 /* Mobile View */
-* {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-h1{
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
-  color:palevioletred;
-  font-size: 4em;
-  text-shadow: 1px 1px 2px hotpink, 0 0 25px ivory, 0 0 25px mistyrose;
-
-}
-
-body {
-  max-width: 1366px;
-  max-height: 768px;
-  /* margin: auto; */
-  color: #6d1a4c;
-  background-color: #FFF0F5;
-}
-
-section {
-  /* display: flex; */
-
-}
-
-nav {
-  display: none;
-}
-
-ul{
-  display: block;
-  margin: auto;
-
-}
-
-img {
-  width: 50%;
-}
-
-#myBag{
-  position: absolute;
-  bottom: 0;
-  width: 710px;
-  height:432px;
-  margin:auto;
-  display: block;
-  padding-left: 10%;
-}
 
 
-/* position */
-/* opacity:1; */
-/* transition: opacity 1s; */
 
-/* li img{
-opacity: .25;
-transition: opacity 4s;
-} */
+@media only screen and (min-width: 769px) {
 
+  * {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  body{
+   background-color:white;
+  }
+  img{
+    display: inline;
+  }
 
-#driftPhone, #driftGrocery, #driftAirpods {
-  /* position: absolute; */
-  padding-top: 5%;
-  display: block;
-  margin: auto;
-  bottom: 200px;
-
-
-  /* bottom:10% */
-  /* transition: all 2s; */
-  /* border: red 13px solid; */
-
-}
-
-/* .phoneMove {
-  position: absolute;
-  left: 10%;
-  bottom: 500px;
-  transition: all 2s;
-} */
-
-#driftPhone {
-  bottom: 50%;
-  height: 117px;
-   width: 64px;
-}
-
-#driftGrocery {
-  bottom: 30%;
-   height:171px;
-   width:156px;
-}
-
-#driftAirpods {
-  bottom: 60%;
-  height:221px;
-  width:99px;
-}
-
-
-#closeBag {
-  position: absolute;
-  bottom:450px;
-  right:450px;
-  margin: auto;
-  display: block;
-}
 
 /* .driftPhone{
     position: absolute;
     bottom:300px;
-  } */
+}
 
+/* } */
 /* Desktop View */
 
 /* could not get media query to work properly, affects tablet view */
-@media only screen and (min-width: 769px) {
-  /* body{
-    background-color: white
+@media only screen and (max-width: 1024px) {
+
+  * {
+    text-decoration: none;
+    list-style-type: none;
   }
-#driftPhone, #driftGrocery, #driftAirpods{
-  display: inline;
-} */
+  h1{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color:palevioletred;
+    font-size: 4em;
+    text-shadow: 1px 1px 2px hotpink, 0 0 25px ivory, 0 0 25px mistyrose;
+
+  }
+
+  body {
+    max-width: 1366px;
+    max-height: 768px;
+    display: block;
+    margin: auto;
+    color: #6d1a4c;
+    background-color: #FFF0F5;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* transitions: moving with percentages, make bag a gif */
+  #bagGlow{
+    position: absolute;
+    bottom: 0;
+    width: 710px;
+    height:432px;
+    margin:auto;
+    display: block;
+    padding-left: 10%;
+  }
+
+
+
+  #phoneGlow,#gGlow, #eGlow{
+    /* position: absolute; */
+    /* padding-top: 5%; */
+    display: block;
+    margin: auto;
+    bottom: 200px;
+    opacity:.5;
+   transition: opacity 1s;
+    /* bottom:10% */
+    /* transition: all 2s; */
+    /* border: red 13px solid; */
+
+  }
+
+  /* .phoneMove {
+    position: absolute;
+    left: 10%;
+    bottom: 500px;
+    transition: all 2s;
+  } */
+
+  #gGlow {
+    bottom: 30%;
+     height:171px;
+     width:156px;
+  }
+
+  #eGlow{
+    z-index:1;
+    bottom: 60%;
+    height:221px;
+    width:99px;
+  }
+  #driftPhone, #driftAirpods, #driftGrocery,#myBag{
+    display: none;
+  }
+
+
+
+
+  #closeBag {
+    position: absolute;
+    bottom:450px;
+    right:450px;
+    margin: auto;
+    display: block;
+  }
+}
 }
