@@ -6,17 +6,21 @@ var closeBag = document.querySelector('#closeBag');
 var driftPhone = document.querySelector('#driftPhone');
 var driftGrocery = document.querySelector('#driftGrocery');
 var driftAirpods = document.querySelector('#driftAirpods');
-var ul = document.querySelector('ul');
+var li = document.querySelector('li');
 
 
 // Fading mouse hover
-ul.addEventListener('mouseover',function(){
-  ul.style.opacity=1;
-});
+// li.addEventListener('mouseover',function(){
+//   li.style.opacity=1;
+// });
+//
+// li.addEventListener('mouseout',function(){
+//   li.style.opacity=.25;
+// });
 
-ul.addEventListener('mouseout',function(){
-  ul.style.opacity=.25;
-});
+
+// Image hover glow
+
 
 // Pop-up bubbles
 myBag.addEventListener('click',function(){

@@ -4,69 +4,124 @@
   list-style-type: none;
 }
 
+h1{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  color:palevioletred;
+  font-size: 4em;
+  text-shadow: 1px 1px 2px hotpink, 0 0 25px ivory, 0 0 25px mistyrose;
+
+}
+
 body {
   max-width: 1366px;
   max-height: 768px;
-  margin: auto;
+  /* margin: auto; */
   color: #6d1a4c;
   background-color: #FFF0F5;
 }
 
 section {
   /* display: flex; */
+
 }
 
 nav {
   display: none;
 }
 
-#myBag {
+ul{
+  display: block;
+  margin: auto;
+
+}
+
+img {
+  width: 50%;
+}
+
+#myBag{
   position: absolute;
   bottom: 0;
-  width: 3in;
+  width: 710px;
+  height:432px;
   margin:auto;
   display: block;
+  padding-left: 10%;
 }
+
 
 /* position */
 /* opacity:1; */
 /* transition: opacity 1s; */
 
-li img{
+/* li img{
 opacity: .25;
 transition: opacity 4s;
-}
+} */
+
 
 #driftPhone, #driftGrocery, #driftAirpods {
-  position: absolute;
+  /* position: absolute; */
+  padding-top: 5%;
+  display: block;
+  margin: auto;
   bottom: 200px;
-  left: 50%;
-  transition: all 2s;
+
+
+  /* bottom:10% */
+  /* transition: all 2s; */
+  /* border: red 13px solid; */
+
 }
 
-.phoneMove {
+/* .phoneMove {
   position: absolute;
   left: 10%;
   bottom: 500px;
   transition: all 2s;
-  border: red 13px solid;
+} */
+
+#driftPhone {
+  bottom: 50%;
+  height: 117px;
+   width: 64px;
 }
 
 #driftGrocery {
-  left: 30%;
+  bottom: 30%;
+   height:171px;
+   width:156px;
 }
 
 #driftAirpods {
-  left: 60%;
+  bottom: 60%;
+  height:221px;
+  width:99px;
+}
+
+
+#closeBag {
+  position: absolute;
+  bottom:450px;
+  right:450px;
+  margin: auto;
+  display: block;
 }
 
 /* .driftPhone{
     position: absolute;
     bottom:300px;
   } */
+
 /* Desktop View */
+
+/* could not get media query to work properly, affects tablet view */
 @media only screen and (min-width: 769px) {
-  img {
-    width: 50%;
+  /* body{
+    background-color: white
   }
+#driftPhone, #driftGrocery, #driftAirpods{
+  display: inline;
+} */
 }
