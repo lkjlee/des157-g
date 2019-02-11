@@ -118,13 +118,15 @@
     text-align: center;
     top: 0;
     background-color: lightpink;
-    width:100%;
+    width: 100%;
   }
+
   footer nav li {
     display: inline;
     padding: 10px;
     text-align: center;
   }
+
   a {
     color: purple;
   }
@@ -242,21 +244,24 @@
     opacity: 1;
     transition: opacity 1s;
   }
-    footer nav {
-      font-family: 'Indie Flower', cursive;
-      position: fixed;
-      display: block;
-      margin: auto;
-      bottom: 0;
-      left:70%;
-      width:100%;
-    }
-    footer nav li {
-      display: inline;
-      padding: 10px;
-      text-align: center;
-    }
-    a {
-      color: purple;
-    }
+
+  footer nav {
+    font-family: 'Indie Flower', cursive;
+    position: fixed;
+    display: block;
+    margin: auto;
+    bottom: 0;
+    left: 70%;
+    width: 100%;
+  }
+
+  footer nav li {
+    display: inline;
+    padding: 10px;
+    text-align: center;
+  }
+
+  a {
+    color: purple;
+  }
 }
