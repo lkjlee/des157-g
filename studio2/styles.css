@@ -1,3 +1,135 @@
+/* Mobile View */
+@media only screen and (max-width: 768px) {
+  * {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  h1 {
+    padding-top: 5%;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: palevioletred;
+    font-size: 4em;
+    text-shadow: 1px 1px 2px hotpink, 0 0 25px ivory, 0 0 25px mistyrose;
+  }
+
+  body {
+    max-width: 768px;
+    max-height: 1024px;
+    color: #6d1a4c;
+    background-color: #FFF0F5;
+  }
+
+  nav {
+    display: none;
+  }
+
+  p {
+    font-family: 'Delius', cursive;
+    width: 10em;
+    text-align: center;
+    border-radius: 15px 50px;
+  }
+
+  #phoneText {
+    position: absolute;
+    padding: 0.5em;
+    background-color: pink;
+    bottom: 66%;
+    left: 22%;
+  }
+
+  #earphonesText {
+    position: absolute;
+    padding: 0.5em;
+    background-color: plum;
+    bottom: 70%;
+    right: 5%;
+  }
+
+  #groceryText {
+    position: absolute;
+    padding: 0.5em;
+    background-color: mistyrose;
+    bottom: 40%;
+    left: 5%;
+  }
+
+  #myBag {
+    position: absolute;
+    bottom: 0;
+    width: 710px;
+    height: 635px;
+  }
+
+  #phoneGlow, #gGlow, #eGlow {
+    display: block;
+    opacity: .5;
+    transition: opacity 1s;
+  }
+
+  #phoneGlow {
+    position: absolute;
+    right: 40%;
+    top: 20%;
+    height: 143px;
+    width: 100px;
+  }
+
+  #gGlow {
+    position: absolute;
+    right: 50%;
+    top: 30%;
+    height: 200px;
+    width: 187px;
+  }
+
+  #eGlow {
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    height: 222px;
+    width: 100px;
+  }
+
+  #closeBag {
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    display: block;
+  }
+
+  .hideE, .hideG, .hideP {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .showE, .showG, .showP {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
+  footer nav {
+    font-family: 'Indie Flower', cursive;
+    position: fixed;
+    display: block;
+    margin: auto;
+    text-align: center;
+    top: 0;
+    background-color: lightpink;
+    width:100%;
+  }
+  footer nav li {
+    display: inline;
+    padding: 10px;
+    text-align: center;
+  }
+  a {
+    color: purple;
+  }
+}
+
 /* Desktop View */
 @media only screen and (min-width: 769px) {
   * {
@@ -14,6 +146,7 @@
   }
 
   body {
+    color: darkviolet;
     background-color: pink;
     max-width: 1366px;
     max-height: 768px;
@@ -109,117 +242,21 @@
     opacity: 1;
     transition: opacity 1s;
   }
-
-}
-
-/* Mobile View */
-@media only screen and (max-width: 768px) {
-  * {
-    text-decoration: none;
-    list-style-type: none;
-  }
-
-  h1 {
-    text-align: center;
-    font-family: 'Indie Flower', cursive;
-    color: palevioletred;
-    font-size: 4em;
-    text-shadow: 1px 1px 2px hotpink, 0 0 25px ivory, 0 0 25px mistyrose;
-  }
-
-  body {
-    max-width: 768px;
-    max-height: 1024px;
-    color: #6d1a4c;
-    background-color: #FFF0F5;
-  }
-
-  nav {
-    display: none;
-  }
-
-  p {
-    font-family: 'Delius', cursive;
-    width: 10em;
-    text-align: center;
-    border-radius: 15px 50px;
-  }
-
-  #phoneText {
-    position: absolute;
-    padding: 0.5em;
-    background-color: pink;
-    bottom: 69%;
-    left: 22%;
-  }
-
-  #earphonesText {
-    position: absolute;
-    padding: 0.5em;
-    background-color: plum;
-    bottom: 72%;
-    right: 10%;
-  }
-
-  #groceryText {
-    position: absolute;
-    padding: 0.5em;
-    background-color: mistyrose;
-    bottom: 40%;
-    left: 5%;
-  }
-
-  #myBag {
-    position: absolute;
-    bottom: 0;
-    width: 710px;
-    height: 635px;
-  }
-
-  #phoneGlow, #gGlow, #eGlow {
-    display: block;
-    opacity: .5;
-    transition: opacity 1s;
-  }
-
-  #phoneGlow {
-    position: absolute;
-    right: 40%;
-    top: 20%;
-    height: 143px;
-    width: 100px;
-  }
-
-  #gGlow {
-    position: absolute;
-    right: 50%;
-    top: 30%;
-    height: 200px;
-    width: 187px;
-  }
-
-  #eGlow {
-    position: absolute;
-    right: 25%;
-    top: 25%;
-    height: 222px;
-    width: 100px;
-  }
-
-  #closeBag {
-    position: absolute;
-    top: 55%;
-    left: 70%;
-    display: block;
-  }
-
-  .hideE, .hideG, .hideP {
-    opacity: 0;
-    transition: opacity 1s;
-  }
-
-  .showE, .showG, .showP {
-    opacity: 1;
-    transition: opacity 1s;
-  }
+    footer nav {
+      font-family: 'Indie Flower', cursive;
+      position: fixed;
+      display: block;
+      margin: auto;
+      bottom: 0;
+      left:70%;
+      width:100%;
+    }
+    footer nav li {
+      display: inline;
+      padding: 10px;
+      text-align: center;
+    }
+    a {
+      color: purple;
+    }
 }
