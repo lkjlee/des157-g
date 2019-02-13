@@ -10,7 +10,7 @@ head {
 body {
   display:block;
   margin:auto;
-  max-width: 1366px;
+  max-width: 800px;
   max-height: 768px;
   color: #6d1a4c;
   background-color: #FFF0F5;
@@ -26,6 +26,12 @@ p {
   padding: 20px;
   line-height: 30px;
   margin: 50px;
+}
+
+p a {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 h1 {
