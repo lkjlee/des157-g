@@ -17,7 +17,7 @@ var plastic = document.querySelector('#plastic');
 var score = document.querySelector("#trashNeeded");
 var scoreCount = 0
 
-
+var reset = document.querySelector("#reset");
 var winPattern = document.querySelector('#winPattern');
 
 trashOpen.addEventListener('mouseover', function() {
