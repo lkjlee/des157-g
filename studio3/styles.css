@@ -17,8 +17,34 @@
     font-family: 'Luckiest Guy', cursive;
   }
 
-  p {
+  /* @keyframes bubbles{
+  0%   {bottom: 0%; right:40%; opacity: 1;}
+  20% {right:70%; left: 50%;}
+  100% {bottom:50%; bottom: 100%;opacity:0;}
+  }
+
+  #bubbles{
+    position: absolute;
+    padding:20px;
+    border-radius: 80%;
+    background-color: #aaede3;
+    animation-name: bubbles;
+    animation: bubbles 3s infinite;
+  } */
+
+  #helpText {
     font-family: 'Fredoka One', cursive;
+    position: absolute;
+    right: 8%;
+    bottom: 70%;
+    background-color: white;
+    color:#1a3960;
+    border-radius: 60%;
+    max-width: 10%;
+    text-align: center;
+    padding: 1.5%;
+    line-height: 120%;
+    transition: opacity 1s;
   }
 
   img {
@@ -26,9 +52,18 @@
     bottom: 5%;
   }
 
+  @keyframes pointer {
+    0%   {bottom: 50%; bottom:55%;}
+    50% {bottom:55%; bottom: 50%;}
+    100% {bottom:50%; bottom: 55%;}
+  }
+
   #pointer {
-    bottom: 30%;
+    bottom: 50%;
     right: 21%;
+    transition: opacity 1s;
+    animation-name: pointer;
+    animation: pointer 3s infinite;
   }
 
   #slugSad {
