@@ -40,37 +40,33 @@
   }
 
   #boot {
-
+    right: 40%;
   }
 
   #bottle {
-
+    right: 50%;
   }
 
   #can {
-
-  }
-
-  #ground {
-
+    right: 60%;
   }
 
   #net {
-
+    right: 70%;
   }
 
   #paper {
-
+    right: 80%;
   }
 
   #plastic {
-
+    right: 90%;
   }
 
   #ground {
     display: block;
     margin: auto;
-    width:100%;
+    width: 100%;
     bottom: 0;
   }
 }
