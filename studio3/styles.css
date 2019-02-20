@@ -1,0 +1,76 @@
+/* Mobile View */
+@media only screen and (max-width: 768px) {
+  * {
+    text-decoration: none;
+    list-style-type: none;
+  }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: #67adce;
+    /* background-image: linear-gradient(to bottom, #1a3960, #67adce, #aaede3); */
+  }
+
+  h1 {
+    font-family: 'Luckiest Guy', cursive;
+  }
+
+  p {
+    font-family: 'Fredoka One', cursive;
+  }
+
+  img {
+    position: absolute;
+    bottom: 5%;
+  }
+
+  #pointer {
+    /* bottom:30%; */
+    right: 21%;
+  }
+
+  #slugSad {
+    right: 5%;
+  }
+
+  #trashOpen {
+    right: 20%
+  }
+
+  #boot {
+
+  }
+
+  #bottle {
+
+  }
+
+  #can {
+
+  }
+
+  #ground {
+
+  }
+
+  #net {
+
+  }
+
+  #paper {
+
+  }
+
+  #plastic {
+
+  }
+
+  #ground {
+    display: block;
+    margin: auto;
+    width:100%;
+    bottom: 0;
+  }
+}
