@@ -17,6 +17,10 @@
     font-family: 'Luckiest Guy', cursive;
   }
 
+  p {
+    font-family: 'Luckiest Guy', cursive;
+  }
+
   /* @keyframes bubbles{
   0%   {bottom: 0%; right:40%; opacity: 1;}
   20% {right:70%; left: 50%;}
