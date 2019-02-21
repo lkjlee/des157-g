@@ -10,6 +10,7 @@
 @media only screen and (min-width: 769px) {
   body {
     background-color: #67adce;
+    font-family: 'Fredoka One', cursive;
     /* background-image: linear-gradient(to bottom, #1a3960, #67adce, #aaede3); */
   }
 
@@ -17,13 +18,9 @@
     font-family: 'Luckiest Guy', cursive;
   }
 
-<<<<<<< HEAD
-  p {
-    font-family: 'Luckiest Guy', cursive;
+  #trashCleaned #trashNeeded {
   }
 
-=======
->>>>>>> 5619d79c4d825bfdbe686c88c45fa1a19e1fe258
   /* @keyframes bubbles{
   0%   {bottom: 0%; right:40%; opacity: 1;}
   20% {right:70%; left: 50%;}
@@ -74,7 +71,7 @@
   }
 
   #slugSad {
-    right: 5%;
+    right: 2%;
   }
 
   #trashOpen {
@@ -108,7 +105,7 @@
   #ground {
     display: block;
     margin: auto;
-    width: 100%;
+    width: 1366;
     bottom: 0;
   }
 }

@@ -14,7 +14,7 @@ var net = document.querySelector('#net');
 var paper = document.querySelector('#paper');
 var plastic = document.querySelector('#plastic');
 
-var score = document.querySelector("#trashNeeded");
+var score = document.querySelector("#trashCleaned");
 var scoreCount = 0
 
 var reset = document.querySelector("#reset");
@@ -44,6 +44,16 @@ function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("src");
   ev.target.appendChild(document.getElementById(data));
+
+}
+
+// Score Keeping
+
+boot.addEventListener("drop", updateScore);
+
+function updateScore() {
+  scoreCount++;
+  score.innerHTML = "Score: " + scoreCount;
 }
 
 // function draw(){
