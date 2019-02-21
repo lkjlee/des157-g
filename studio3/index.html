@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Studio-3</title>
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2"></script>
+</head>
+
+<body>
+  <header>
+    <h1>In Deep Trouble!</h1>
+  </header>
+
+<!-- <div id="bubbles"></div> -->
+
+<section>
+<p id="trashNeeded"></p>/<p id="trashCleaned"></p>
+</section>
+
+  <section>
+    <p id="helpText">Drag the trash into the bin to help the sea slug clean up the ocean!</p>
+  </section>
+
+  <!-- <img src="images/winPattern.png" alt="winPattern" id="winPattern" height="225" width="300" /> -->
+
+  <img src="images/ground.png" alt="ground" id="ground" height="238" width="1366" />
+
+  <img src="images/pointer.png" alt="pointer" id="pointer" height="235" width="143" />
+  <img src="images/trashOpen.png" alt="trash1" id="trashOpen" height="200" width="268" ondrop="drop(event)" ondragover="allowDrop(event)"/>
+  <img src="images/slugSad.gif" alt="slug1" id="slugSad" height="453" width="257" />
+
+  <img src="images/boot.png" alt="boot" id="boot" height="137" width="99" draggable="true" ondragstart="drag(event)"/>
+  <img src="images/bottle.png" alt="bottle" id="bottle" height="117" width="69" draggable="true" ondragstart="drag(event)"/>
+  <img src="images/can.png" alt="can" id="can" height="104" width="78" draggable="true" ondragstart="drag(event)"/>
+  <img src="images/net.png" alt="net" id="net" height="54" width="107" draggable="true" ondragstart="drag(event)"/>
+  <img src="images/paper.png" alt="paper" id="paper" height="75" width="152" draggable="true" ondragstart="drag(event)"/>
+  <img src="images/plastic.png" alt="plastic" id="plastic" height="115" width="111" draggable="true" ondragstart="drag(event)"/>
+
+  <button id="reset">Play Again</button>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
