@@ -17,10 +17,13 @@
     font-family: 'Luckiest Guy', cursive;
   }
 
+<<<<<<< HEAD
   p {
     font-family: 'Luckiest Guy', cursive;
   }
 
+=======
+>>>>>>> 5619d79c4d825bfdbe686c88c45fa1a19e1fe258
   /* @keyframes bubbles{
   0%   {bottom: 0%; right:40%; opacity: 1;}
   20% {right:70%; left: 50%;}
