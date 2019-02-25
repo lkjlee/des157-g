@@ -4,37 +4,164 @@
     text-decoration: none;
     list-style-type: none;
   }
-}
 
-/* Desktop View */
-@media only screen and (min-width: 769px) {
   body {
     background-color: #67adce;
     font-family: 'Fredoka One', cursive;
-    /* background-image: linear-gradient(to bottom, #1a3960, #67adce, #aaede3); */
+    max-width: 768px;
+    max-height: 1024px;
   }
 
   h1 {
     font-family: 'Luckiest Guy', cursive;
+    padding-top: 1%;
+    padding-left: 2%;
+    font-size: 250%;
+    color: #1a3960;
   }
 
-  #trashCleaned #trashNeeded {
-  }
-
-  /* @keyframes bubbles{
-  0%   {bottom: 0%; right:40%; opacity: 1;}
-  20% {right:70%; left: 50%;}
-  100% {bottom:50%; bottom: 100%;opacity:0;}
-  }
-
-  #bubbles{
+  #winPattern {
     position: absolute;
-    padding:20px;
-    border-radius: 80%;
-    background-color: #aaede3;
-    animation-name: bubbles;
-    animation: bubbles 3s infinite;
-  } */
+    top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    width: 100%;
+  }
+
+  #helpText {
+    font-family: 'Fredoka One', cursive;
+    padding-top: 1%;
+    padding-left: 2%;
+    color: white;
+    text-align: center;
+    font-size: 140%;
+    max-width: 50%;
+    line-height: 130%;
+    display: block;
+    margin: auto;
+  }
+
+  #trashCleaned {
+    font-size: 400%;
+    color: #aaede3;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+  }
+
+  #pointer {
+    display: none;
+  }
+
+  #slugSad {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+  }
+
+  #trashOpen {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+  }
+
+  #boot {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+  }
+
+  #bottle {
+    position: absolute;
+    top: 30%;
+    right: 25%;
+  }
+
+  #can {
+    position: absolute;
+    top: 40%;
+    right: 35%;
+  }
+
+  #net {
+    position: absolute;
+    top: 50%;
+    right: 55%;
+  }
+
+  #paper {
+    position: absolute;
+    top: 60%;
+    right: 65%;
+  }
+
+  #plastic {
+    position: absolute;
+    top: 70%;
+    right: 75%;
+  }
+
+  #ground {
+    display: none;
+  }
+
+  footer {
+    position: fixed;
+    display: block;
+    margin: auto;
+    top: 0;
+    right: 5%;
+  }
+
+  footer nav li {
+    display: inline;
+    padding: 10px;
+    text-align: center;
+  }
+
+  a {
+    color: darkturquoise;
+  }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 769px) {
+  * {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  body {
+    background-color: #67adce;
+    font-family: 'Fredoka One', cursive;
+  }
+
+  #winPattern {
+    position: absolute;
+    top: 0;
+    padding-bottom: 10%;
+    margin: auto;
+  }
+
+  h1 {
+    font-family: 'Luckiest Guy', cursive;
+    padding-top: 1%;
+    padding-left: 2%;
+    font-size: 250%;
+    color: #1a3960;
+  }
+
+  #trashCleaned {
+    font-size: 400%;
+    color: #aaede3;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
 
   #helpText {
     font-family: 'Fredoka One', cursive;
@@ -42,7 +169,7 @@
     right: 8%;
     bottom: 70%;
     background-color: white;
-    color:#1a3960;
+    color: #1a3960;
     border-radius: 60%;
     max-width: 10%;
     text-align: center;
@@ -57,9 +184,20 @@
   }
 
   @keyframes pointer {
-    0%   {bottom: 50%; bottom:55%;}
-    50% {bottom:55%; bottom: 50%;}
-    100% {bottom:50%; bottom: 55%;}
+    0% {
+      bottom: 50%;
+      bottom: 55%;
+    }
+
+    50% {
+      bottom: 55%;
+      bottom: 50%;
+    }
+
+    100% {
+      bottom: 50%;
+      bottom: 55%;
+    }
   }
 
   #pointer {
@@ -107,5 +245,23 @@
     margin: auto;
     width: 1366;
     bottom: 0;
+  }
+
+  footer {
+    position: fixed;
+    display: block;
+    margin: auto;
+    top: 0;
+    right: 40%;
+  }
+
+  footer nav li {
+    display: inline;
+    padding: 10px;
+    text-align: center;
+  }
+
+  a {
+    color: darkturquoise;
   }
 }
