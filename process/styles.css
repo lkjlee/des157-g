@@ -16,13 +16,13 @@ body {
   background-color: #FFF0F5;
 }
 
+
 img {
-  display: block;
-  margin: auto;
   padding: 15px;
 }
 
 p {
+
   padding: 20px;
   line-height: 30px;
   margin: 50px;
@@ -78,6 +78,7 @@ footer {
   right: 0;
   width: 100%;
   opacity: 0.5;
+  background: beige;
 }
 
 footer nav {
