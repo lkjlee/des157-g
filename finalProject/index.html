@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive-Wireframe</title>
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Mobile Agenda</h1>
+    <nav id="topNav">
+      <button id="name" class="dropMenu">Hello, Name</button>
+      <section id="menu" class="hideMenu">
+        <ul>
+          <li>Color</li>
+          <li>Reminders</li>
+          <li>Notifications</li>
+          <li>Auto-Delete</li>
+        </ul>
+      </section>
+      <input type="find" placeholder="Search..">
+    </nav>
+  </header>
+
+  <button id="undo">Undo</button>
+  <button id="addNew" class="show">+ Add New</button>
+
+  <div id="exit" class="hide">&otimes;</div>
+    <section id="popUp" class="hide">
+      <h3>+ Add New</h3>
+        <ul id="graphics">
+          <li> <img src="" alt="study">
+          </li>
+          <li> <img src="" alt="class">
+          </li>
+          <li> <img src="" alt="walk">
+          </li>
+          <li> <img src="" alt="tv">
+          </li>
+          <li> <img src="" alt="eat">
+          </li>
+          <li> <img src="" alt="work">
+          </li>
+        </ul>
+
+        <h4 id="calender">Date</h4>
+
+        <h4 id="timeTitle">Time</h4>
+
+        <p id="note">Note.innerHTML</p>
+
+    </section>
+
+  <div id="exitList">&otimes;
+    <section id="listObjects">
+      <ul id="listTop">
+        <li id="time">Time.innerHTML</li>
+        <li id="month">Date.innerHTML</li>
+      </ul>
+
+      <ul id="listBottom">
+        <li><img src="" alt="graphics"></li>
+        <li id="note">Note.innerHTML</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

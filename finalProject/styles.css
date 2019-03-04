@@ -1,0 +1,158 @@
+/*
+Note:
+I'm not sure why sizing is an issue, so website breaks when not in tablet mode. I am looking for a way to fix this and hadn't found a reason yet. Is there a way to set a fixed size so the website doesn't break?*/
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  max-width: 768px;
+  max-height: 1024px;
+  margin: auto;
+}
+
+header {
+  border-style: solid;
+  border-color: grey;
+  margin: 3%;
+}
+
+#name {
+  border-style: solid;
+  border-color: black;
+  padding:20px;
+  font-size: 150%;
+  position: absolute;
+  right:10%;
+  top: 3%;
+}
+
+#menu {
+  position: absolute;
+  right: 10%;
+  top: 7.5%;
+  font-size: 140%;
+}
+
+#menu li {
+  padding:20px;
+  text-align: center;
+  border-style: solid;
+  border-color: grey;
+  background: white;
+}
+
+#undo {
+  position: absolute;
+  left: 10%;
+  font-size: 200%;
+  top: 16%;
+  border-style: solid;
+  border-color: grey;
+  padding:10px;
+}
+
+#addNew {
+  position: absolute;
+  margin-left: 20%;
+  left: 20%;
+  font-size: 200%;
+  top: 16%;
+  text-align: center;
+  border-style: solid;
+  border-color: grey;
+  padding:10px;
+  padding-left: 75px;
+  padding-right: 85px;
+}
+
+#popUp {
+  position: absolute;
+  border-style: solid;
+  border-color: grey;
+  margin: 3%;
+  margin-top: 10%;
+  padding-bottom: 30%;
+  background: white;
+}
+
+#exit{
+  position: absolute;
+  left:40%;
+  top:25%;
+  z-index: 1;
+}
+
+h3 {
+  padding-left: 5%;
+  font-size: 200%;
+}
+
+#graphics {
+  padding-top: 5%;
+}
+
+#graphics li {
+  display: inline;
+  padding:1%;
+}
+
+#calender{
+  position: absolute;
+  right:20%;
+  top:30%;
+}
+
+#timeTitle {
+  position: absolute;
+  right:20%;
+  top:45%;
+}
+
+p {
+  position: absolute;
+  left:10%;
+  top:45%;
+}
+
+#listObjects {
+  border-style: solid;
+  border-color: grey;
+  margin: 3%;
+  padding: 10%;
+}
+
+#listTop, #listBottom {
+  margin: 5%;
+  display: inline;
+  text-align: center;
+}
+
+#listTop li {
+  display: inline;
+}
+
+#listBottom li {
+  display: inline;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+
+.dropMenu {
+  opacity: 1;
+}
+
+.hideMenu {
+  opacity: 0;
+}
