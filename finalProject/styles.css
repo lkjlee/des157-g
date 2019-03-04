@@ -1,6 +1,6 @@
 /*
 Note:
-I'm not sure why sizing is an issue, so website breaks when not in tablet mode. I am looking for a way to fix this and hadn't found a reason yet. Is there a way to set a fixed size so the website doesn't break?*/
+I'm not sure why sizing is an issue, but the website breaks when not in tablet mode (intended device for this site). I am looking for a way to fix this and hadn't found a reason yet. Is there a way to set a fixed size so the website doesn't break?*/
 
 * {
   text-decoration: none;
