@@ -140,6 +140,11 @@ p {
   display: inline;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
 .hide {
   opacity: 0;
 }
