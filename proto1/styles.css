@@ -1,0 +1,233 @@
+/*
+Note:
+I'm not sure why sizing is an issue, but the website breaks when not in tablet mode (intended device for this site). I am looking for a way to fix this and hadn't found a reason yet. Is there a way to set a fixed size so the website doesn't break?*/
+/* @media only screen and (max-width: 768px) { */
+* {
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: 'Handlee', cursive;
+}
+
+body {
+  display: block;
+  max-width: 768px;
+  max-height: 1024px;
+  margin: auto;
+  background-color: #ffad98;
+}
+
+header {
+  background-color: #6dc8c9;
+  padding: 3%;
+}
+
+h1{
+  font-family: 'Sniglet', cursive;
+  font-size: 200%;
+  color: white;
+}
+
+input {
+  margin: auto;
+  display: block;
+}
+/*
+#undo {
+  font-family: 'Sniglet', cursive;
+  position: absolute;
+  left: 10%;
+  font-size: 200%;
+  top: 16%;
+  border-style: solid;
+  border-color: grey;
+  padding:10px;
+} */
+
+#addNew {
+  font-family: 'Sniglet', cursive;
+  display: block;
+  margin: auto;
+  margin-top:20px;
+  margin-bottom: 10px;
+  font-size: 200%;
+  top: 16%;
+  text-align: center;
+  border-style: solid;
+  border-color: #e49f96;
+  padding:10px;
+  padding-left: 75px;
+  padding-right: 85px;
+  background-color: #e49f96;
+  border-color: none;
+  color:white;
+}
+
+button:focus {
+  outline:0;
+}
+
+#popUp {
+  position: absolute;
+  border-style: solid;
+  border-color: #ffebb9;
+  margin: 50px;
+  padding-bottom: 30%;
+  background: #f6fcff;
+}
+
+#exit{
+  position: absolute;
+  right:70px;
+  top:300px;
+  z-index: 1;
+}
+
+h3 {
+  padding-left: 5%;
+  font-size: 200%;
+}
+
+#graphics {
+  padding-top: 5%;
+}
+
+#graphics li {
+  display: inline;
+  padding:1%;
+}
+
+#calender{
+  position: absolute;
+  right:20%;
+  top:30%;
+}
+
+#timeTitle {
+  position: absolute;
+  right:20%;
+  top:45%;
+}
+
+p {
+  position: absolute;
+  left:10%;
+  top:45%;
+}
+
+#date {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 0px;
+}
+
+#doTime {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+#listObject1 {
+  margin: 50px;
+  padding: 30px;
+  background-color: #f6fcff;
+}
+
+#listTop, #listBottom {
+  margin: 5%;
+  display: inline;
+  text-align: center;
+}
+
+#listTop li {
+  display: inline;
+}
+
+#listBottom li {
+  display: inline;
+}
+
+#listObject2 {
+  margin-top: 60px;
+  margin: 50px;
+  padding: 30px;
+  background-color: #f6fcff;
+}
+
+#listObject3 {
+  margin-top: 80px;
+  margin: 50px;
+  padding: 30px;
+  background-color: #f6fcff;
+}
+
+#draggables {
+position: absolute;
+bottom: 100px;
+left: 150px;
+}
+
+img {
+  width: 13%;
+  height: 13%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.dropbtn {
+  font-size: 140%;
+  background-color: #6dc8c9;
+  color: white;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: absolute;
+  right: 10%;
+  top: 1.5%;
+}
+
+.dropdown-content {
+  top: 50%;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li:hover {
+  background-color: #ffe3b5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #6dc8c9;
+}
+
+
+
+/* Desktop View */
+/* @media only screen and (min-width: 769px) {
+} */

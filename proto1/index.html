@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Prototype-I</title>
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Mobile Agenda</h1>
+    <nav id="topNav" class="dropdown">
+      <button id="name" class="dropbtn">Hello, Name</button>
+      <ul id="menu" class="dropdown-content">
+        <li>Color</li>
+        <li>Reminders</li>
+        <li>Notifications</li>
+        <li>Auto-Delete</li>
+      </ul>
+    </nav>
+  </header>
+
+  <button id="addNew" class="show">+ Add New</button>
+  <input type="text" placeholder="Find..">
+
+  <div id="exit" class="hide">&otimes;</div>
+  <section id="popUp" class="hide">
+    <h3>+ Add New</h3>
+
+    <form name="new" onsubmit="return false">
+      <fieldset>
+        <label for="name">Note</label>
+        <input type="text" name="note" id="note" required>
+      </fieldset>
+
+    <h4 id="calender">Date</h4>
+    <input id="date" type="date" value="2019-01-01">
+
+    <h4 id="timeTitle">Time</h4>
+    <p id="note">Note.innerHTML</p>
+
+
+  </section>
+
+  <section id="listObject1">
+    <p id="toDo"></p>
+    <input id="doTime" type="time" name="doTime">
+    <input id="date" type="date" value="2019-01-01">
+  </section>
+
+  <section id="listObject2">
+    <input id="doTime" type="time" name="doTime">
+    <input id="date" type="date" value="2019-01-01">
+  </section>
+
+  <section id="listObject3">
+    <input id="doTime" type="time" name="doTime">
+    <input id="date" type="date" value="2019-01-01">
+  </section>
+
+  <section id="draggables">
+    <img src="images/desk.png" alt="study">
+
+    <img src="images/eat.png" alt="class">
+
+    <img src="images/shop.png" alt="walk">
+
+    <img src="images/study.png" alt="tv">
+
+    <img src="images/tv.png" alt="eat">
+
+    <img src="images/work.png" alt="work">
+
+  </section>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
