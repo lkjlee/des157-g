@@ -25,14 +25,4 @@ exit.addEventListener('click', function() {
 });
 
 
-    // My current progress:
-    // Working on making menu drop down when "Hello, Name" button is pressed. I want to add an infinite scroll feature, is that something possible with the stuff learned in class?
-
-    // name.addEventListener('click', function() {
-    //   topNav.style.display = 'block';
-    //   topNav.className = "dropMenu";
-    // });
-
-    // name.addEventListener('mouseOut', function() {
-    //   topNav.style.display = 'none';
-    // });
+  
