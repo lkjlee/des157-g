@@ -52,4 +52,16 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 
+// function dateSearch () {
+//   var d = new Date('date2');
+//   var n = d.getDate();
+// }
+
+function newPost() {
+  var newAdd = document.createElement("addNew");
+  newAdd.setAttribute("type", "date");
+  // new.setAttribute("value", "2014-02-09");
+  document.body.appendChild(newAdd);
+}
+
 // Idea: Add button now creates a new pop-up that goes on top of the list, rather than a menu overlay
