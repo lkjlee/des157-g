@@ -51,3 +51,5 @@ function drop(ev) {
   var data = ev.dataTransfer.getData('src');
   ev.target.appendChild(document.getElementById(data));
 }
+
+// Idea: Add button now creates a new pop-up that goes on top of the list, rather than a menu overlay
