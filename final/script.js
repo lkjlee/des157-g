@@ -18,9 +18,6 @@ dateControl2.value = '2019-01-01';
 var dateControl3 = document.querySelector('#date3');
 dateControl3.value = '2019-01-01';
 
-var bgColor = document.querySelector('#bg');
-
-
 addNew.addEventListener('click', function() {
   exit.style.display = 'block';
   popUp.style.display = 'block';
@@ -56,28 +53,23 @@ bgColor5.addEventListener('click', function() {
   document.body.style.backgroundColor = "#9dd68f";
 });
 
-var name = document.querySelector('#name');
-var nameType = document.querySelector('#nameType');
+var draggables = document.querySelector('#draggables');
+var classText = document.querySelector('#classText');
 
-  name.innerHTML = nameType;
-// colorPicker.addEventListener("input", updateFirst, false);
-// colorPicker.addEventListener("change", watchColorPicker, false);
+// draggables.addEventListener('click', function() {
+  // classText.style.display: block;
 
-// function watchColorPicker(event) {
-//   document.querySelectorAll('#colorP').forEach(function(p) {
-//     colorP.style.color = event.target.value;
-//   });
-// }
+//   classText.innerHTML =
+//     "<p>Class</p>";
+//   classText.className = "showT";
+// });
 
-// var bgColor = document.querySelector('#bg');
-//
-// bgColor.addEventListener('click', function() {
-//
-// }
-
-// function bgColor(newColor) {
-//   document.bgColor = newColor;
-// }
+// draggables.addEventListener('mouseout', function() {
+//   classText.style.display: none;
+//   classText.innerHTML =
+//     "<p>Class</p>";
+//   classText.className = "showT";
+// });
 
 var desk = document.querySelector('#class');
 var eat = document.querySelector('#eat');
@@ -91,19 +83,14 @@ function allowDrop(ev) {
 }
 
 function drag(ev) {
-  ev.dataTransfer.setData('src', ev.target.id);
+  ev.dataTransfer.setData("text", ev.target.id);
 }
 
 function drop(ev) {
   ev.preventDefault();
-  var data = ev.dataTransfer.getData('src');
+  var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
-
-// function dateSearch () {
-//   var d = new Date('date2');
-//   var n = d.getDate();
-// }
 
 function newPost() {
   var newAdd = document.createElement("addNew");

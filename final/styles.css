@@ -169,18 +169,20 @@
     color: #e49f96;
   }
 
-  /* #toDo1, #toDo2, #toDo3 {
-  margin-top: 0;
-  margin-left:0;
-  width: 350px;
-} */
   #slot1, #slot2, #slot3 {
-    /* position: absolute; */
-    /* top: 0; */
-    border-radius: 50px;
-    margin-left: 0;
-    z-index: 3;
-    /* display: none; */
+    width: 100px;
+    height: 90px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    background: #f6fcff;
+  }
+
+  #classText {
+    position: absolute;
+    padding: 0.5em;
+    background-color: hotpink;
+    bottom: 40%;
+    right: 20%;
   }
 
   #listTop, #listBottom {
@@ -251,12 +253,14 @@
     color: white;
   }
 
-  .hide {
+  .hide, .hideT {
     opacity: 0;
+    transition: opacity 1s;
   }
 
-  .show {
+  .show, .showT {
     opacity: 1;
+    transition: opacity 1s;
   }
 
   .dropbtn {
