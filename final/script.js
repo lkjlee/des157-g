@@ -18,6 +18,8 @@ dateControl2.value = '2019-01-01';
 var dateControl3 = document.querySelector('#date3');
 dateControl3.value = '2019-01-01';
 
+setTimeout(function(){ alert("Make sure to save a screenshot on your mobile device!"); }, 10000);
+
 addNew.addEventListener('click', function() {
   exit.style.display = 'block';
   popUp.style.display = 'block';
@@ -54,22 +56,6 @@ bgColor5.addEventListener('click', function() {
 });
 
 var draggables = document.querySelector('#draggables');
-var classText = document.querySelector('#classText');
-
-// draggables.addEventListener('click', function() {
-  // classText.style.display: block;
-
-//   classText.innerHTML =
-//     "<p>Class</p>";
-//   classText.className = "showT";
-// });
-
-// draggables.addEventListener('mouseout', function() {
-//   classText.style.display: none;
-//   classText.innerHTML =
-//     "<p>Class</p>";
-//   classText.className = "showT";
-// });
 
 var desk = document.querySelector('#class');
 var eat = document.querySelector('#eat');

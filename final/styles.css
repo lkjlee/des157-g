@@ -124,6 +124,10 @@
     font-size: 200%;
   }
 
+  h4 {
+    text-align: center;
+  }
+
   #graphics {
     padding-top: 5%;
   }
@@ -174,15 +178,7 @@
     height: 90px;
     margin-bottom: 5px;
     border-radius: 50%;
-    background: #f6fcff;
-  }
-
-  #classText {
-    position: absolute;
-    padding: 0.5em;
-    background-color: hotpink;
-    bottom: 40%;
-    right: 20%;
+    background: white;
   }
 
   #listTop, #listBottom {
@@ -303,6 +299,7 @@
   .dropdown:hover .dropbtn {
     background-color: #6dc8c9;
   }
+
 }
 
 /* Desktop View  */
@@ -312,6 +309,12 @@
     list-style-type: none;
     box-sizing: border-box;
     font-family: 'Handlee', cursive;
+  }
+
+  #nameType{
+    background: #c4fbfc;
+    border: transparent;
+    width:100px;
   }
 
   body {
@@ -356,6 +359,30 @@
     color: white;
   }
 
+  #bg1,#bg2,#bg3,#bg4,#bg5 {
+    font-size: 130%;
+  }
+
+  #bg1 {
+    color:#ffad98;
+  }
+
+  #bg2 {
+    color:#ffbadf;
+  }
+
+  #bg3 {
+    color:#b5e1fc;
+  }
+
+  #bg4 {
+    color:#f7dead;
+  }
+
+  #bg5 {
+    color:#9dd68f;
+  }
+
   button:focus {
     outline: 0;
   }
@@ -364,16 +391,20 @@
     position: absolute;
     border-style: solid;
     border-color: #ffebb9;
-    margin: 50px;
+    width: 50%;
+    height: 5%;
+    display: block;
+    margin-left:80px;
+    z-index: 1;
     padding-bottom: 30%;
-    background: #f6fcff;
+    background-color: #f6fcff;
   }
 
   #exit {
     position: absolute;
-    right: 70px;
-    top: 300px;
-    z-index: 1;
+    right: 320px;
+    top: 250px;
+    z-index: 2;
   }
 
   h3 {
@@ -407,23 +438,58 @@
     left: 900px;
   }
 
+  input {
+    margin: auto;
+    display: block;
+  }
+
+  #find {
+    background: transparent;
+    border: transparent;
+    border-bottom: 2px solid #ffebb9;
+    width: 200px;
+    font-size: 25px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  textarea {
+    outline: none;
+    border: none;
+  }
+
+  #note1, #note2, #note3 {
+    height: 100px;
+    width: 300px;
+    display: block;
+    margin-left: 0;
+  }
+
   #date, #date1, #date2, #date3 {
     display: block;
     margin-right: 0;
     margin-bottom: 0px;
+    color: #6dc8c9;
+    font-size: 200%;
   }
 
   #doTime1, #doTime2, #doTime3 {
     display: block;
     margin-right: 0;
+    margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 150%;
+    color: #e49f96;
   }
 
-  #toDo1, #toDo2, #toDo3 {
-    margin-top: 20px;
-    margin-left: 0;
-    width: 350px;
-    padding: 30px;
+  #slot1, #slot2, #slot3 {
+    width: 100px;
+    height: 90px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    background: white;
   }
 
   #listTop, #listBottom {
@@ -441,7 +507,7 @@
   }
 
   #listObject1 {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 350px;
     width: 350px;
     padding: 30px;
@@ -468,9 +534,9 @@
   }
 
   #draggables {
-    position: absolute;
-    bottom: 150px;
-    right: 1100px;
+    position: fixed;
+    bottom: 100px;
+    right: 900px;
     width: 160px;
     padding: 15px;
     border-radius: 25px;
@@ -486,14 +552,22 @@
   footer {
     position: fixed;
     bottom: 0;
+    text-decoration: none;
+    color: white;
   }
 
-  .hide {
+  a {
+    color: white;
+  }
+
+  .hide, .hideT {
     opacity: 0;
+    transition: opacity 1s;
   }
 
-  .show {
+  .show, .showT {
     opacity: 1;
+    transition: opacity 1s;
   }
 
   .dropbtn {
@@ -506,7 +580,7 @@
 
   .dropdown {
     position: absolute;
-    right: 10%;
+    right: 25%;
     top: 1.5%;
   }
 
