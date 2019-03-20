@@ -1,3 +1,4 @@
+/* Mobile/ Tablet View */
 @media only screen and (max-width: 768px) {
   * {
     text-decoration: none;
@@ -47,10 +48,10 @@
     border: none;
   }
 
-  #nameType{
+  #nameType {
     background: #c4fbfc;
     border: transparent;
-    width:100px;
+    width: 100px;
   }
 
   #addNew {
@@ -82,34 +83,34 @@
     width: 80%;
     height: 5%;
     display: block;
-    margin-left:80px;
+    margin-left: 80px;
     z-index: 1;
     padding-bottom: 30%;
     background-color: #f6fcff;
   }
 
-  #bg1,#bg2,#bg3,#bg4,#bg5 {
+  #bg1, #bg2, #bg3, #bg4, #bg5 {
     font-size: 130%;
   }
 
   #bg1 {
-    color:#ffad98;
+    color: #ffad98;
   }
 
   #bg2 {
-    color:#ffbadf;
+    color: #ffbadf;
   }
 
   #bg3 {
-    color:#b5e1fc;
+    color: #b5e1fc;
   }
 
   #bg4 {
-    color:#f7dead;
+    color: #f7dead;
   }
 
   #bg5 {
-    color:#9dd68f;
+    color: #9dd68f;
   }
 
   #exit {
@@ -299,7 +300,6 @@
   .dropdown:hover .dropbtn {
     background-color: #6dc8c9;
   }
-
 }
 
 /* Desktop View  */
@@ -311,10 +311,10 @@
     font-family: 'Handlee', cursive;
   }
 
-  #nameType{
+  #nameType {
     background: #c4fbfc;
     border: transparent;
-    width:100px;
+    width: 100px;
   }
 
   body {
@@ -359,28 +359,28 @@
     color: white;
   }
 
-  #bg1,#bg2,#bg3,#bg4,#bg5 {
+  #bg1, #bg2, #bg3, #bg4, #bg5 {
     font-size: 130%;
   }
 
   #bg1 {
-    color:#ffad98;
+    color: #ffad98;
   }
 
   #bg2 {
-    color:#ffbadf;
+    color: #ffbadf;
   }
 
   #bg3 {
-    color:#b5e1fc;
+    color: #b5e1fc;
   }
 
   #bg4 {
-    color:#f7dead;
+    color: #f7dead;
   }
 
   #bg5 {
-    color:#9dd68f;
+    color: #9dd68f;
   }
 
   button:focus {
@@ -394,7 +394,7 @@
     width: 50%;
     height: 5%;
     display: block;
-    margin-left:80px;
+    margin-left: 80px;
     z-index: 1;
     padding-bottom: 30%;
     background-color: #f6fcff;

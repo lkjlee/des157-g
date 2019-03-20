@@ -18,7 +18,9 @@ dateControl2.value = '2019-01-01';
 var dateControl3 = document.querySelector('#date3');
 dateControl3.value = '2019-01-01';
 
-setTimeout(function(){ alert("Make sure to save a screenshot on your mobile device!"); }, 10000);
+setTimeout(function() {
+  alert("Make sure to save a screenshot on your mobile device!");
+}, 10000);
 
 addNew.addEventListener('click', function() {
   exit.style.display = 'block';
@@ -77,12 +79,3 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
-
-function newPost() {
-  var newAdd = document.createElement("addNew");
-  newAdd.setAttribute("type", "date");
-  // new.setAttribute("value", "2014-02-09");
-  document.body.appendChild(newAdd);
-}
-
-// Idea: Add button now creates a new pop-up that goes on top of the list, rather than a menu overlay
